@@ -4,12 +4,12 @@
     android:layout_width="fill_parent"
     android:layout_height="wrap_content"
     android:focusable="true">
-    
+
     <ImageView
         android:id="@+id/widgetimage"
-        android:layout_width="wrap_content" 
+        android:layout_width="wrap_content"
         android:layout_height="wrap_content"
-        android:src="@drawable/widget" 
         android:layout_centerHorizontal="true"
-        android:layout_centerVertical="true"/>  
+        android:layout_centerVertical="true"
+        android:src="@drawable/widget" />
 </RelativeLayout>
