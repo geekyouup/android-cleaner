@@ -4,6 +4,7 @@ import android.app.Activity;
 import android.app.WallpaperManager;
 import android.content.Intent;
 import android.net.Uri;
+import android.os.Build;
 import android.os.Bundle;
 import android.view.MotionEvent;
 import android.view.View;
@@ -28,9 +29,12 @@ public class Cleaner extends Activity {
         mView = (RelativeLayout) findViewById(R.id.mainview);
         mView.setFocusableInTouchMode(false);
 
-        //hide system bar for honeycomb+ devices
-        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.HONEYCOMB)
+        //fullscreen for JB+, hide system bar for honeycomb+ devices
+        if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN)
+            mView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_FULLSCREEN);
+        else if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.HONEYCOMB)
             mView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_LOW_PROFILE);
+
 
         mWPM = WallpaperManager.getInstance(this);
     }
@@ -77,9 +81,11 @@ public class Cleaner extends Activity {
             mWPM.setWallpaperOffsets(mView.getWindowToken(), xWP, yWP);
         }
 
-        if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.HONEYCOMB) {
+        //fullscreen for JB+, hide system bar for honeycomb+ devices
+        if (android.os.Build.VERSION.SDK_INT >= Build.VERSION_CODES.JELLY_BEAN)
+            mView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_HIDE_NAVIGATION | View.SYSTEM_UI_FLAG_FULLSCREEN);
+        else if (android.os.Build.VERSION.SDK_INT >= android.os.Build.VERSION_CODES.HONEYCOMB)
             mView.setSystemUiVisibility(View.SYSTEM_UI_FLAG_LOW_PROFILE);
-        }
 
         return super.onTouchEvent(event);
     }
