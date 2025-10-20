@@ -1,0 +1,34 @@
+[
+    {
+        "merged": "/app/app/build/intermediates/res/merged/debug/xml_widget_def.xml.flat",
+        "source": "/app/app/src/main/res/xml/widget_def.xml"
+    },
+    {
+        "merged": "/app/app/build/intermediates/res/merged/debug/drawable_icon.png.flat",
+        "source": "/app/app/src/main/res/drawable/icon.png"
+    },
+    {
+        "merged": "/app/app/build/intermediates/res/merged/debug/drawable_widget.png.flat",
+        "source": "/app/app/src/main/res/drawable/widget.png"
+    },
+    {
+        "merged": "/app/app/build/intermediates/res/merged/debug/drawable-hdpi_icon.png.flat",
+        "source": "/app/app/src/main/res/drawable-hdpi/icon.png"
+    },
+    {
+        "merged": "/app/app/build/intermediates/res/merged/debug/drawable-hdpi_widget.png.flat",
+        "source": "/app/app/src/main/res/drawable-hdpi/widget.png"
+    },
+    {
+        "merged": "/app/app/build/intermediates/res/merged/debug/anim_launchanim.xml.flat",
+        "source": "/app/app/src/main/res/anim/launchanim.xml"
+    },
+    {
+        "merged": "/app/app/build/intermediates/res/merged/debug/layout_main.xml.flat",
+        "source": "/app/app/src/main/res/layout/main.xml"
+    },
+    {
+        "merged": "/app/app/build/intermediates/res/merged/debug/layout_widget.xml.flat",
+        "source": "/app/app/src/main/res/layout/widget.xml"
+    }
+]

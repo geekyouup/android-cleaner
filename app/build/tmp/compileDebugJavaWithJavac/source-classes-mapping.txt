@@ -1,0 +1,6 @@
+com/geekyouup/android/thecleaner/BuildConfig.java
+ com.geekyouup.android.thecleaner.BuildConfig
+com/geekyouup/android/thecleaner/CleanerWidget.java
+ com.geekyouup.android.thecleaner.CleanerWidget
+com/geekyouup/android/thecleaner/Cleaner.java
+ com.geekyouup.android.thecleaner.Cleaner
