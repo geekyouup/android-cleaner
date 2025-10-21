@@ -1,13 +1,14 @@
 apply plugin: 'com.android.application'
 
 android {
-    compileSdkVersion 30
+    compileSdkVersion 36
     buildToolsVersion "30.0.3"
+    namespace "com.geekyouup.android.thecleaner"
 
     defaultConfig {
         applicationId "com.geekyouup.android.thecleaner"
         minSdkVersion 7
-        targetSdkVersion 30
+        targetSdkVersion 33
         versionCode 9
         versionName "1.0.8"
     }
