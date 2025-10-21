@@ -1,0 +1,4 @@
+#Mon Oct 20 20:15:51 UTC 2025
+base.0=/app/app/build/intermediates/dex/debug/mergeDexDebug/classes.dex
+path.0=classes.dex
+renamed.0=classes.dex

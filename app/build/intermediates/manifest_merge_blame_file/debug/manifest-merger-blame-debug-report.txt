@@ -1,0 +1,75 @@
+1<?xml version="1.0" encoding="utf-8"?>
+2<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+3    package="com.geekyouup.android.thecleaner"
+4    android:versionCode="9"
+5    android:versionName="1.0.8" >
+6
+7    <uses-sdk
+7-->/app/app/src/main/AndroidManifest.xml:33:5-35:41
+8        android:minSdkVersion="7"
+8-->/app/app/src/main/AndroidManifest.xml:34:9-34
+9        android:targetSdkVersion="30" />
+9-->/app/app/src/main/AndroidManifest.xml:35:9-38
+10
+11    <supports-screens
+11-->/app/app/src/main/AndroidManifest.xml:36:5-40:40
+12        android:largeScreens="true"
+12-->/app/app/src/main/AndroidManifest.xml:37:9-36
+13        android:normalScreens="true"
+13-->/app/app/src/main/AndroidManifest.xml:38:9-37
+14        android:smallScreens="true"
+14-->/app/app/src/main/AndroidManifest.xml:39:9-36
+15        android:xlargeScreens="true" />
+15-->/app/app/src/main/AndroidManifest.xml:40:9-37
+16
+17    <application
+17-->/app/app/src/main/AndroidManifest.xml:7:5-32:19
+18        android:debuggable="true"
+19        android:icon="@drawable/icon"
+19-->/app/app/src/main/AndroidManifest.xml:8:9-38
+20        android:label="@string/app_name" >
+20-->/app/app/src/main/AndroidManifest.xml:9:9-41
+21        <activity
+21-->/app/app/src/main/AndroidManifest.xml:10:9-18:20
+22            android:name="com.geekyouup.android.thecleaner.Cleaner"
+22-->/app/app/src/main/AndroidManifest.xml:11:13-36
+23            android:label="@string/app_name"
+23-->/app/app/src/main/AndroidManifest.xml:12:13-45
+24            android:theme="@android:style/Theme.Wallpaper.NoTitleBar.Fullscreen" >
+24-->/app/app/src/main/AndroidManifest.xml:13:13-81
+25            <intent-filter>
+25-->/app/app/src/main/AndroidManifest.xml:14:13-17:29
+26                <action android:name="android.intent.action.MAIN" />
+26-->/app/app/src/main/AndroidManifest.xml:15:17-69
+26-->/app/app/src/main/AndroidManifest.xml:15:25-66
+27
+28                <category android:name="android.intent.category.LAUNCHER" />
+28-->/app/app/src/main/AndroidManifest.xml:16:17-77
+28-->/app/app/src/main/AndroidManifest.xml:16:27-74
+29            </intent-filter>
+30        </activity>
+31
+32        <!-- Broadcast Receiver that will process AppWidget updates -->
+33        <receiver
+33-->/app/app/src/main/AndroidManifest.xml:22:9-31:20
+34            android:name="com.geekyouup.android.thecleaner.CleanerWidget"
+34-->/app/app/src/main/AndroidManifest.xml:23:13-42
+35            android:label="@string/app_name" >
+35-->/app/app/src/main/AndroidManifest.xml:24:13-45
+36            <intent-filter>
+36-->/app/app/src/main/AndroidManifest.xml:25:13-27:29
+37                <action android:name="android.appwidget.action.APPWIDGET_UPDATE" />
+37-->/app/app/src/main/AndroidManifest.xml:26:17-84
+37-->/app/app/src/main/AndroidManifest.xml:26:25-81
+38            </intent-filter>
+39
+40            <meta-data
+40-->/app/app/src/main/AndroidManifest.xml:28:13-30:54
+41                android:name="android.appwidget.provider"
+41-->/app/app/src/main/AndroidManifest.xml:29:17-58
+42                android:resource="@xml/widget_def" />
+42-->/app/app/src/main/AndroidManifest.xml:30:17-51
+43        </receiver>
+44    </application>
+45
+46</manifest>

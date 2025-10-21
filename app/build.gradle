@@ -1,0 +1,33 @@
+apply plugin: 'com.android.application'
+
+android {
+    compileSdkVersion 36
+    buildToolsVersion "30.0.3"
+    namespace "com.geekyouup.android.thecleaner"
+
+    defaultConfig {
+        applicationId "com.geekyouup.android.thecleaner"
+        minSdkVersion 7
+        targetSdkVersion 33
+        versionCode 9
+        versionName "1.0.8"
+    }
+
+    buildTypes {
+        release {
+            minifyEnabled false
+            proguardFiles getDefaultProguardFile('proguard-android.txt'), 'proguard-rules.pro'
+        }
+    }
+
+    sourceSets {
+        main {
+            java.srcDirs = ['src/main/java']
+        }
+    }
+
+    compileOptions {
+        sourceCompatibility JavaVersion.VERSION_1_8
+        targetCompatibility JavaVersion.VERSION_1_8
+    }
+}
