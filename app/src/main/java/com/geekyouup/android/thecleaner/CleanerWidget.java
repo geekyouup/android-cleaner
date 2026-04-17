@@ -23,7 +23,7 @@ public class CleanerWidget extends AppWidgetProvider {
         RemoteViews updateViews = new RemoteViews(context.getPackageName(), R.layout.widget);
         try {
             Intent defineIntent2 = new Intent(context, Cleaner.class);
-            PendingIntent pendingIntent2 = PendingIntent.getActivity(context, 0 /* no requestCode */, defineIntent2, 0 /* no flags */);
+            PendingIntent pendingIntent2 = PendingIntent.getActivity(context, 0 /* no requestCode */, defineIntent2, PendingIntent.FLAG_IMMUTABLE);
             updateViews.setOnClickPendingIntent(R.id.widget, pendingIntent2);
         } catch (Exception e) {
             Log.e("Cleaner Widget", "Error Settings Intents", e);
